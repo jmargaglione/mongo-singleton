@@ -43,3 +43,4 @@ await (MongoSingleton)()
   .catch(err => {
     ...
   });
+```
