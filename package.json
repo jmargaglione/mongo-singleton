@@ -1,0 +1,33 @@
+{
+  "name": "mongo-singleton",
+  "version": "1.0.0",
+  "description": "A singleton instance for MongoDB with fallbacks for unspecified Mongo URL (great for testing)",
+  "main": "mongo-singleton.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "set MONGO_URL=mongodb://localhost:27017/testEnv && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmargaglione/mongo-singleton.git"
+  },
+  "keywords": [
+    "mongo",
+    "singleton"
+  ],
+  "author": "John Margaglione",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmargaglione/mongo-singleton/issues"
+  },
+  "homepage": "https://github.com/jmargaglione/mongo-singleton#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3"
+  },
+  "dependencies": {
+    "mongodb": "^2.2.31"
+  }
+}
