@@ -36,11 +36,6 @@ There are a couple of ways you can specify the URL to connect to:
 Bear in mind that this is implemented using promises, so you might want to add an await in front of the call if you intend to put any code afterwards that requires the database connection.
 
 ```js
-await (MongoSingleton)()
-  .then(([db,url]) => {
-    ...
-  });
-  .catch(err => {
-    ...
-  });
+db = await (MongoSingleton)();
+db.doSomething();
 ```
